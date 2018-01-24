@@ -1,6 +1,10 @@
 # Create-new-MAMP-site
 A bash shell script to create new sites easily within MAMP.
 
+<p align="center">
+<img src="https://i.imgur.com/uRhKLOc.gif" width="100%">
+</p>
+
 ## What it does (automatically)
 1. Prompts you for a site url.
 2. Downloads the latest version of Wordpress from Wordpress.org to a folder named after your site's url within MAMP's htdocs folder
