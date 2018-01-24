@@ -38,4 +38,8 @@ rm -f latest.tar.gz
 echo All done! The $domainname site folder is now ready within MAMPs htdocs folder.
 echo
 echo You can close this window now.
+
+open http://localhost:8888/$domainname/
+open -na 'Google Chrome' --args --new-window http://localhost:8888/phpMyAdmin/server_databases.php?server=1
+
 exit
