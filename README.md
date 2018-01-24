@@ -7,7 +7,7 @@ A bash shell script to create new sites easily within MAMP.
 3. Unzips the downloaded file
 4. Moves the files to their proper place
 5. Deletes the downloaded zip and leftovers
-6. Opens your default browser to the new Wordpress site's setup screen (MAMP must be running!)
+6. Opens your default browser to the new Wordpress site's setup screen at ``localhost:8888/[site-url]`` (MAMP must be running!)
 7. Opens Chrome to MAMP's phpMyAdmin for you to create a new database in. (MAMP must be running!)
 
 ## Installation
