@@ -15,3 +15,5 @@ That folder is a system folder and will be invisible within Finder by default. T
 3. Unzips the downloaded file
 4. Moves the files to their proper place
 5. Deletes the downloaded zip and leftovers
+6. Opens the default browser to the new Wordpress site's Setup screen (MAMP must be running!)
+7. Opens Chrome which opens to MAMP's phpMyAdmin for Database creation (MAMP must be running!)
