@@ -22,3 +22,8 @@ That folder is a system folder and will be invisible within Finder by default. T
 
 3. Now you can open Terminal.app on your Mac at any time and type ``new-wp.sh`` to create a new site
 
+## Screenshots
+
+![](https://i.imgur.com/dorySYG.jpg)
+
+![](https://i.imgur.com/CnS4P9j.jpg)
