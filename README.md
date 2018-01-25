@@ -27,3 +27,8 @@ That folder is a system folder and will be invisible within Finder by default. T
 ![](https://i.imgur.com/dorySYG.jpg)
 
 ![](https://i.imgur.com/CnS4P9j.jpg)
+
+## To-do
+* [ ] Define Database details on install. Like [this](https://gist.github.com/bgallagh3r/2853221)
+* [ ] Remove unused plugins
+* [ ] Add essential plugins
