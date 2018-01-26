@@ -35,11 +35,27 @@ rmdir ./wordpress/
 # GET RID OF THE DOWNLOADED AND UNZIPPED WORDPRESS ZIP FILE
 rm -f latest.tar.gz
 
+# DELETE HELLO DOLLY & AKISMET PLUGINS
+echo Deleting junk plugins...
+rm -r wp-content/plugins/hello.php
+rm -r wp-content/plugins/akismet
+echo
+
+# DELETE DEFAULT THEMES
+echo Deleting themes...
+rm -r wp-content/themes/twentyfifteen
+rm -r wp-content/themes/twentysixteen
+rm -r wp-content/themes/twentyseventeen
+echo
+
 echo All done! The $domainname site folder is now ready within MAMPs htdocs folder.
 echo
 echo You can close this window now.
 
+# OPEN THE NEW WEBSITE IN THE BROWSER
 open http://localhost:8888/$domainname/
+
+# OPEN CHROME TO MAMPS PHPMYADMIN "NEW DATABASE" SCREEN.
 open -na 'Google Chrome' --args --new-window http://localhost:8888/phpMyAdmin/server_databases.php?server=1
 
 exit
