@@ -31,5 +31,5 @@ That folder is a system folder and will be invisible within Finder by default. T
 
 ## To-do
 * [ ] Define Database details on install. Like [this](https://gist.github.com/bgallagh3r/2853221)
-* [ ] Remove unused plugins
+* [x] Remove unused plugins & themes
 * [ ] Add essential plugins
