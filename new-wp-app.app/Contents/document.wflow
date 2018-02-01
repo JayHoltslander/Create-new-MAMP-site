@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>234E5FC5-035B-4EA5-82A4-7331B9D706FD</string>
+				<string>824962F7-A8AB-4C07-B22E-24D33430522F</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>FACBC790-565B-4C38-97A4-38FB5E958B17</string>
+				<string>692454C4-CA29-4107-9CAB-8C0E4BB487EB</string>
 				<key>UUID</key>
-				<string>DA6C948D-2D7A-4AE1-BB10-7BE6C7CA860D</string>
+				<string>F8203402-DCF1-4CF9-8835-D2B7FD4B8F54</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -102,10 +102,12 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>656.500000:248.000000</string>
+				<string>656.500000:316.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -118,7 +120,7 @@ end run</string>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.application</string>
 	</dict>
 </dict>
 </plist>
