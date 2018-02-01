@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>419</string>
+	<key>AMApplicationVersion</key>
+	<string>2.6</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>tell application "SystemUIServer"	set domainname to text returned of (display dialog "What is the domain name and extension of the new site?" default answer "wordpress.org" buttons {"Continue"})	set ipaddress to text returned of (display dialog "Enter IP address" with icon caution default answer "" buttons {"Continue"})end telltell application "Terminal"	set currentTab to do script ("
+	wget -P /Applications/MAMP/htdocs/" &amp; quoted form of domainname &amp; " http://wordpress.org/latest.tar.gz &amp;&amp;
+	wget -P /Applications/MAMP/htdocs/" &amp; quoted form of domainname &amp; " http://wordpress.org/latest.tar.gz &amp;&amp;
+	cd /Applications/MAMP/htdocs/" &amp; quoted form of domainname &amp; " &amp;&amp;
+	tar xfz latest.tar.gz &amp;&amp;
+	mv wordpress/* ./ &amp;&amp;
+	rmdir ./wordpress/ &amp;&amp;
+	rm -f latest.tar.gz &amp;&amp;
+	rm -f latest.tar.gz.1
+	rm -r wp-content/plugins/hello.php &amp;&amp;
+	rm -r wp-content/plugins/akismet &amp;&amp;
+	rm -r wp-content/themes/twentyfifteen &amp;&amp;
+	rm -r wp-content/themes/twentysixteen &amp;&amp;
+	rm -r wp-content/themes/twentyseventeen
+	;exit
+	")end telltell application "SystemUIServer"	display alert "Creating site..." message "The new site is now being created in MAMP's htdocs folder in the background. In a few moments it will be ready for use." buttons {"Exit"}end tell</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>234E5FC5-035B-4EA5-82A4-7331B9D706FD</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FACBC790-565B-4C38-97A4-38FB5E958B17</string>
+				<key>UUID</key>
+				<string>DA6C948D-2D7A-4AE1-BB10-7BE6C7CA860D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>576.000000:577.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict/>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>
